@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patents — Chaeeun Kim</title>
+  <meta name="description" content="Patents by Chaeeun Kim in biosensing and point-of-care diagnostics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION (same on every page) ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">Chaeeun Kim</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="patents.html" class="is-active">Patents</a>
+        <a href="news.html">News</a>
+        <a href="cv.html">CV</a>
+      </nav>
+      <div style="display:flex; gap:8px;">
+        <button class="icon-btn nav__toggle" onclick="toggleMenu()" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle dark mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <div class="layout layout--single">
+
+        <div class="page-header">
+          <h1>Patents</h1>
+          <p>Registered intellectual property.</p>
+        </div>
+
+        <!-- ============ PATENT LIST ============
+             To add a patent, copy one <div class="patent"> ... </div> block and edit. -->
+        <div class="patent">
+          <div class="patent__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h2 class="patent__title">Strips for Measuring Glucose and Potassium</h2>
+            <p class="patent__meta">
+              <span>Patent No.</span> KR 10-2757781 &nbsp;·&nbsp;
+              <span>Country:</span> Republic of Korea &nbsp;·&nbsp;
+              <span>Status:</span> Granted &nbsp;·&nbsp;
+              <span>Date:</span> January 16, 2025
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Chaeeun Kim · Seoul National University, Seoul, Korea</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

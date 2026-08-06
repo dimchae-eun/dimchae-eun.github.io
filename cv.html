@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Chaeeun Kim</title>
+  <meta name="description" content="Curriculum vitae of Chaeeun Kim, biosensors and bioelectronics researcher." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION (same on every page) ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">Chaeeun Kim</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="patents.html">Patents</a>
+        <a href="news.html">News</a>
+        <a href="cv.html" class="is-active">CV</a>
+      </nav>
+      <div style="display:flex; gap:8px;">
+        <button class="icon-btn nav__toggle" onclick="toggleMenu()" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle dark mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <div class="layout layout--single">
+
+        <div class="page-header" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+          <div>
+            <h1>Curriculum Vitae</h1>
+            <p>Chaeeun Kim · Biosensors &amp; Bioelectronics Researcher</p>
+          </div>
+          <!-- PDF DOWNLOAD: put your CV at assets/files/CV_Chaeeun_Kim.pdf, then
+               remove style="display:none" below to show the button. -->
+          <a class="btn-download" href="assets/files/CV_Chaeeun_Kim.pdf" target="_blank" rel="noopener" >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Download PDF
+          </a>
+        </div>
+
+        <!-- Education -->
+        <div class="cv-block">
+          <h2>Education</h2>
+          <div class="cv-row">
+            <div class="cv-row__year">2026</div>
+            <div class="cv-row__body">
+              <h3>M.S., Applied Bioengineering</h3>
+              <p>Seoul National University, Korea · Outstanding Thesis Award</p>
+            </div>
+          </div>
+          <div class="cv-row">
+            <div class="cv-row__year">2024</div>
+            <div class="cv-row__body">
+              <h3>B.S., Biomedical Engineering</h3>
+              <p>Chung-Ang University, Korea</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Experience -->
+        <div class="cv-block">
+          <h2>Research Experience</h2>
+          <div class="cv-row">
+            <div class="cv-row__year">2023</div>
+            <div class="cv-row__body">
+              <h3>Undergraduate Intern — AFBL, Seoul National University</h3>
+              <p>PI: Prof. Kangwon Lee</p>
+            </div>
+          </div>
+          <div class="cv-row">
+            <div class="cv-row__year">2022</div>
+            <div class="cv-row__body">
+              <h3>Undergraduate Intern (U-SURF) — TMB Lab, UNIST</h3>
+              <p>PI: Prof. Joo Hun Kang</p>
+            </div>
+          </div>
+          <div class="cv-row">
+            <div class="cv-row__year">2021</div>
+            <div class="cv-row__body">
+              <h3>Undergraduate Intern — College of Medicine, Seoul National University</h3>
+              <p>PI: Prof. Aesun Shin</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Publications -->
+        <div class="cv-block">
+          <h2>Selected Publications</h2>
+          <div class="cv-row">
+            <div class="cv-row__year">2026</div>
+            <div class="cv-row__body">
+              <h3>Small (IF 11.8)</h3>
+              <p>Supercapacitive Carbon-Coated δ-MnO₂ Nanosheets as a Solid-Contact Material for Self-Testing Potassium-Ion Biosensors.</p>
+            </div>
+          </div>
+          <div class="cv-row">
+            <div class="cv-row__year">2026</div>
+            <div class="cv-row__body">
+              <h3>Biosensors and Bioelectronics (IF 11.8) · First author</h3>
+              <p>Calibration-Free Potassium Quantification via a Stoichiometric Enzyme Cascade on Laser-Induced Graphene.</p>
+            </div>
+          </div>
+          <div class="cv-row">
+            <div class="cv-row__year">2025</div>
+            <div class="cv-row__body">
+              <h3>Clinical Journal of the American Society of Nephrology (IF 7.1)</h3>
+              <p>Clinical Evaluation of a Disposable Test Strip for Potassium Level Measurement in Patients Treated with Maintenance Hemodialysis.</p>
+            </div>
+          </div>
+          <p style="margin-top:6px;"><a href="publications.html">See full publication list →</a></p>
+        </div>
+
+        <!-- Patents -->
+        <div class="cv-block">
+          <h2>Patents</h2>
+          <div class="cv-row">
+            <div class="cv-row__year">2025</div>
+            <div class="cv-row__body">
+              <h3>Strips for Measuring Glucose and Potassium</h3>
+              <p>KR 10-2757781 · Republic of Korea · Granted</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards -->
+        <div class="cv-block">
+          <h2>Awards &amp; Honors</h2>
+          <div class="cv-row">
+            <div class="cv-row__year">2026</div>
+            <div class="cv-row__body">
+              <h3>Outstanding Thesis Award</h3>
+              <p>Convergence Science and Technology, Seoul National University</p>
+            </div>
+          </div>
+          <div class="cv-row">
+            <div class="cv-row__year">2024</div>
+            <div class="cv-row__body">
+              <h3>Best Poster Presentation Award</h3>
+              <p>Korean BioChip Society Fall Meeting 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Interests -->
+        <div class="cv-block">
+          <h2>Research Interests</h2>
+          <div class="pills">
+            <span class="pill">Biosensors</span>
+            <span class="pill">Bioelectronics</span>
+            <span class="pill">Point-of-Care Diagnostics (POCT)</span>
+            <span class="pill">Electrochemical Biosensors</span>
+            <span class="pill">Laser-Induced Graphene Electrodes</span>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="cv-block">
+          <h2>Contact</h2>
+          <p style="color:var(--text-soft);">
+            <a href="mailto:codms0914@snu.ac.kr">codms0914@snu.ac.kr</a> · Seoul National University, Seoul, Korea
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Chaeeun Kim · Seoul National University, Seoul, Korea</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
