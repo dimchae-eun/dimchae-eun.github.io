@@ -268,8 +268,13 @@
       <a class="nav__brand" href="index.html">Chaeeun Kim</a>
       <nav class="nav__links" id="navLinks">
         <a href="index.html">About</a>
-        <a href="publications.html">Publications</a>
-        <a href="patents.html">Patents</a>
+        <details class="nav__dropdown">
+          <summary class="nav__dropdown-toggle">Research <span class="nav__caret" aria-hidden="true">▾</span></summary>
+          <div class="nav__dropdown-menu">
+            <a href="publications.html">Publications</a>
+            <a href="patents.html">Patents</a>
+          </div>
+        </details>
         <a href="news.html" class="is-active">News</a>
         <a href="cv.html">CV</a>
       </nav>
