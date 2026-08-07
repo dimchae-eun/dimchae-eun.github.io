@@ -18,8 +18,13 @@
       <a class="nav__brand" href="index.html">Chaeeun Kim</a>
       <nav class="nav__links" id="navLinks">
         <a href="index.html">About</a>
-        <a href="publications.html" class="is-active">Publications</a>
-        <a href="patents.html">Patents</a>
+        <details class="nav__dropdown">
+          <summary class="nav__dropdown-toggle is-active">Research <span class="nav__caret" aria-hidden="true">▾</span></summary>
+          <div class="nav__dropdown-menu">
+            <a href="publications.html" class="is-active">Publications</a>
+            <a href="patents.html">Patents</a>
+          </div>
+        </details>
         <a href="news.html">News</a>
         <a href="cv.html">CV</a>
       </nav>
@@ -84,7 +89,7 @@
             <div class="pub__year">2025</div>
             <div class="pub__body">
               <h2 class="pub__title">Clinical Evaluation of a Disposable Test Strip for Potassium Level Measurement in Patients Treated with Maintenance Hemodialysis</h2>
-              <p class="pub__authors">Cheol Ho Park, Yujoon Kim, <span class="me">Chaeeun Kim</span>, Chaehyung Kim, Sowon Kim, Kangwon Lee, Tae-Hyun Yoo</p>
+              <p class="pub__authors">Cheol Ho Park<sup>†</sup>, Yujoon Kim<sup>†</sup>, <span class="me">Chaeeun Kim<sup>†</sup></span>, Chaehyung Kim<sup>†</sup>, Sowon Kim, Kangwon Lee, Tae-Hyun Yoo<span class="author-note"><sup>†</sup> These authors contributed equally.</span></p>
               <div class="pub__venue">
                 <span class="pub__journal">Clinical Journal of the American Society of Nephrology (CJASN)</span>
                 <span class="badge badge--if">IF 7.1</span>
