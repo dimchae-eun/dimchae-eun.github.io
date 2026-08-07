@@ -12,14 +12,20 @@
 </head>
 <body>
 
+
   <!-- ============ NAVIGATION (same on every page) ============ -->
   <header class="nav">
     <div class="nav__inner">
       <a class="nav__brand" href="index.html">Chaeeun Kim</a>
       <nav class="nav__links" id="navLinks">
         <a href="index.html">About</a>
-        <a href="publications.html">Publications</a>
-        <a href="patents.html" class="is-active">Patents</a>
+        <details class="nav__dropdown">
+          <summary class="nav__dropdown-toggle is-active">Research <span class="nav__caret" aria-hidden="true">▾</span></summary>
+          <div class="nav__dropdown-menu">
+            <a href="publications.html">Publications</a>
+            <a href="patents.html" class="is-active">Patents</a>
+          </div>
+        </details>
         <a href="news.html">News</a>
         <a href="cv.html">CV</a>
       </nav>
@@ -34,14 +40,17 @@
     </div>
   </header>
 
+
   <main class="site-main">
     <div class="container">
       <div class="layout layout--single">
+
 
         <div class="page-header">
           <h1>Patents</h1>
           <p>Registered intellectual property.</p>
         </div>
+
 
         <!-- ============ PATENT LIST ============
              To add a patent, copy one <div class="patent"> ... </div> block and edit. -->
@@ -59,15 +68,3 @@
             </p>
           </div>
         </div>
-
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">© 2026 Chaeeun Kim · Seoul National University, Seoul, Korea</div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
