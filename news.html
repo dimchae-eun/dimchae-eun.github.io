@@ -261,12 +261,12 @@
       }
     }
 
-    /* Click-to-enlarge viewer for publication cards */
-    .news-lightbox-target {
+    /* Click-to-enlarge viewer for all News photos */
+    .news-card__photo img {
       cursor: zoom-in;
     }
 
-    .news-lightbox-target:focus-visible {
+    .news-card__photo img:focus-visible {
       outline: 3px solid var(--news-blue);
       outline-offset: -3px;
     }
@@ -574,7 +574,7 @@
   </main>
 
 
-  <div class="news-lightbox" id="news-lightbox" role="dialog" aria-modal="true" aria-label="Expanded publication image" hidden>
+  <div class="news-lightbox" id="news-lightbox" role="dialog" aria-modal="true" aria-label="Expanded News photo" hidden>
     <button class="news-lightbox__close" type="button" aria-label="Close enlarged image">&times;</button>
     <img class="news-lightbox__image" src="" alt="" />
   </div>
@@ -589,7 +589,7 @@
       const lightbox = document.getElementById('news-lightbox');
       const enlargedImage = lightbox.querySelector('.news-lightbox__image');
       const closeButton = lightbox.querySelector('.news-lightbox__close');
-      const targets = document.querySelectorAll('.news-lightbox-target');
+      const targets = document.querySelectorAll('.news-card__photo img');
       let lastTrigger = null;
 
       const openLightbox = (image) => {
@@ -609,6 +609,11 @@
       };
 
       targets.forEach((image) => {
+        image.setAttribute('role', 'button');
+        image.tabIndex = 0;
+        if (!image.getAttribute('aria-label')) {
+          image.setAttribute('aria-label', `Enlarge photo: ${image.alt || 'News image'}`);
+        }
         image.addEventListener('click', () => openLightbox(image));
         image.addEventListener('keydown', (event) => {
           if (event.key === 'Enter' || event.key === ' ') {
