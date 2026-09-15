@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20260809" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260915" />
 </head>
 <body>
 
@@ -99,7 +99,8 @@
 
 
           <!-- Intro -->
-          <section class="section">
+          <section class="section hero-panel">
+            <p class="hero__eyebrow">HELLO!</p>
             <h2 class="hero__name">Hi, I'm Chaeeun Kim </h2>
             <p class="hero__tagline">A proactive, evolving, and self-driven researcher.</p>
             <div class="prose">
@@ -131,30 +132,45 @@
 
 
           <!-- Research Focus -->
-          <section class="section">
-            <h2 class="section__title">Research Focus</h2>
+          <section class="section section--research">
+            <div class="section__heading-row">
+              <h2 class="section__title">Research Focus</h2>
+              <a class="section__more" href="publications.html" aria-label="View all research publications">
+                View All Research
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
             <div class="cards">
-              <div class="card">
-                <div class="card__icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
+              <article class="card research-card">
+                <div class="research-card__media">
+                  <img src="assets/img/research-biosensor.svg" alt="Illustration of an electrochemical potassium biosensor and enzyme cascade" />
                 </div>
-                <h3>Electrochemical Biosensors</h3>
-                <p>Enzyme-based and ion-selective sensing for accurate, calibration-free quantification.</p>
-              </div>
-              <div class="card">
-                <div class="card__icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16"/><path d="M4 15h16"/><path d="M4 11h16"/><path d="M4 7h16"/></svg>
+                <div class="research-card__body">
+                  <span class="research-card__number">01</span>
+                  <h3>Electrochemical Biosensors</h3>
+                  <p>Enzyme-based and ion-selective sensing for accurate, calibration-free quantification.</p>
                 </div>
-                <h3>Laser-Induced Graphene (LIG) Electrodes</h3>
-                <p>Scalable, low-cost graphene electrodes patterned by laser for wearable and disposable devices.</p>
-              </div>
-              <div class="card">
-                <div class="card__icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+              </article>
+              <article class="card research-card">
+                <div class="research-card__media">
+                  <img src="assets/img/research-lig.svg" alt="Illustration of laser-induced graphene patterned on a polyimide substrate" />
                 </div>
-                <h3>Point-of-Care Diagnostics</h3>
-                <p>Disposable test strips clinically validated for rapid, on-site health monitoring.</p>
-              </div>
+                <div class="research-card__body">
+                  <span class="research-card__number">02</span>
+                  <h3>Laser-Induced Graphene (LIG) Electrodes</h3>
+                  <p>Scalable, low-cost graphene electrodes patterned by laser for wearable and disposable devices.</p>
+                </div>
+              </article>
+              <article class="card research-card">
+                <div class="research-card__media">
+                  <img src="assets/img/research-poct.svg" alt="Illustration of a portable point-of-care analyzer and disposable test strip" />
+                </div>
+                <div class="research-card__body">
+                  <span class="research-card__number">03</span>
+                  <h3>Point-of-Care Diagnostics</h3>
+                  <p>Disposable test strips clinically validated for rapid, on-site health monitoring.</p>
+                </div>
+              </article>
             </div>
           </section>
 

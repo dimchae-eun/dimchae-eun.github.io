@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract molecular background</title>
+  <desc id="desc">A subtle blue molecular network and flowing biointerface shapes.</desc>
+  <defs>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dceaff" stop-opacity=".16"/>
+      <stop offset=".48" stop-color="#a7c8ff" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#5b91ee" stop-opacity=".12"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="35%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#f7fbff"/>
+      <stop offset=".32" stop-color="#b8d6ff"/>
+      <stop offset="1" stop-color="#4f83dc"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <path d="M498-30C646 49 614 151 756 184c61 14 117 4 178-30v-184Z" fill="url(#wave)"/>
+  <path d="M494 470c101-117 227-148 406-103v103Z" fill="#bad4fb" opacity=".12"/>
+  <g stroke="#79a6ec" stroke-width="4" stroke-linecap="round" opacity=".28">
+    <path d="m627 112 76 43 74-40 66 39"/>
+    <path d="m703 155 1 81 73 42 69-39"/>
+    <path d="m777 115 0 82 69 42"/>
+    <path d="m704 236-73 44 1 76"/>
+    <path d="m846 154 1 85 55 32"/>
+  </g>
+  <g fill="url(#orb)" opacity=".64">
+    <circle cx="627" cy="112" r="17"/><circle cx="703" cy="155" r="22"/>
+    <circle cx="777" cy="115" r="15"/><circle cx="846" cy="154" r="18"/>
+    <circle cx="704" cy="236" r="16"/><circle cx="777" cy="278" r="23"/>
+    <circle cx="846" cy="239" r="15"/><circle cx="632" cy="280" r="20"/>
+    <circle cx="632" cy="356" r="14"/><circle cx="902" cy="271" r="17"/>
+  </g>
+  <g fill="#7eabef" opacity=".14" filter="url(#blur)">
+    <circle cx="562" cy="72" r="25"/><circle cx="828" cy="342" r="34"/>
+    <circle cx="730" cy="64" r="18"/><circle cx="590" cy="375" r="28"/>
+  </g>
+  <g fill="none" stroke="#5f91df" stroke-width="3" opacity=".18">
+    <path d="m761 176 20-12 20 12v23l-20 12-20-12Z"/>
+    <path d="m800 199 20-12 20 12v23l-20 12-20-12Z"/>
+    <path d="m722 199 20-12 19 12v23l-19 12-20-12Z"/>
+  </g>
+</svg>
