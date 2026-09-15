@@ -236,9 +236,9 @@ img { max-width: 100%; display: block; }
   padding: 0;
 }
 .research-card__media {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 242 / 219;
   overflow: hidden;
-  background: linear-gradient(145deg, #f8fbff, #edf4ff);
+  background: #f8fbff;
   border-bottom: 1px solid var(--border);
 }
 .research-card__media img {
@@ -248,23 +248,7 @@ img { max-width: 100%; display: block; }
   transition: transform .35s ease;
 }
 .research-card:hover .research-card__media img { transform: scale(1.025); }
-.research-card__body { padding: 18px 20px 22px; }
-.research-card__number {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 10px;
-  color: var(--accent);
-  font-size: .78rem;
-  font-weight: 800;
-  letter-spacing: .08em;
-}
-.research-card__number::after {
-  content: "";
-  width: 24px;
-  height: 1px;
-  background: color-mix(in srgb, var(--accent) 55%, transparent);
-}
+.research-card__body { padding: 15px 18px 20px; }
 .research-card h3 { font-size: 1rem; line-height: 1.28; }
 .research-card p { line-height: 1.55; }
 
@@ -442,7 +426,7 @@ html[data-theme="dark"] .tag--award { background: #3a2f14; color: #fbbf24; }
   .section__heading-row .section__title::after { display: none; }
   .section__more { font-size: .8rem; }
   .cards { grid-template-columns: 1fr; }
-  .research-card__media { aspect-ratio: 16 / 8.5; }
+  .research-card__media { aspect-ratio: 242 / 219; }
 }
 
 /* ---------- Research navigation dropdown ---------- */
