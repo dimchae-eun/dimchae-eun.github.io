@@ -236,7 +236,8 @@ img { max-width: 100%; display: block; }
   padding: 0;
 }
 .research-card__media {
-  aspect-ratio: 242 / 219;
+  position: relative;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   background: #f8fbff;
   border-bottom: 1px solid var(--border);
@@ -246,6 +247,25 @@ img { max-width: 100%; display: block; }
   height: 100%;
   object-fit: cover;
   transition: transform .35s ease;
+}
+.research-card__index {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #4f7ee8;
+  font-size: .75rem;
+  font-weight: 700;
+  text-shadow: 0 1px 5px rgba(255, 255, 255, .95);
+}
+.research-card__index::after {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: #8eb3ff;
 }
 .research-card:hover .research-card__media img { transform: scale(1.025); }
 .research-card__body { padding: 15px 18px 20px; }
@@ -426,7 +446,7 @@ html[data-theme="dark"] .tag--award { background: #3a2f14; color: #fbbf24; }
   .section__heading-row .section__title::after { display: none; }
   .section__more { font-size: .8rem; }
   .cards { grid-template-columns: 1fr; }
-  .research-card__media { aspect-ratio: 242 / 219; }
+  .research-card__media { aspect-ratio: 3 / 2; }
 }
 
 /* ---------- Research navigation dropdown ---------- */
