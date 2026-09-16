@@ -185,14 +185,17 @@ img { max-width: 100%; display: block; }
 .hero__eyebrow {
   margin: 0 0 10px;
   color: var(--accent);
-  font-size: .76rem;
-  font-weight: 800;
-  letter-spacing: .32em;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .06em;
 }
 .hero__name { font-size: 2.4rem; margin: 0 0 6px; letter-spacing: -.03em; }
 .hero__tagline { font-size: 1.15rem; color: var(--accent); font-weight: 600; margin: 0 0 20px; }
 .prose p { color: var(--text-soft); margin: 0 0 16px; }
-.prose strong { color: var(--text); }
+.hero-panel .prose strong {
+  color: var(--text);
+  font-weight: 700;
+}
 
 /* ---------- Cards / research focus ---------- */
 .section__heading-row {
