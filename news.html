@@ -77,6 +77,13 @@
       padding: 7px;
     }
 
+    .news-card__media--duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
+      padding: 7px;
+    }
+
     .news-card__photo {
       position: relative;
       display: grid;
@@ -436,10 +443,9 @@
           </article>
 
           <article class="news-card news-card--award">
-            <div class="news-card__media news-card__media--gallery">
-              <div class="news-card__photo"><span class="news-card__placeholder">Award</span><img src="assets/img/news/thesis-award-1.jpg" alt="Outstanding Thesis Award ceremony" onerror="this.remove()" /></div>
-              <div class="news-card__photo"><span class="news-card__placeholder">Photo 2</span><img src="assets/img/news/thesis-award-2.jpg" alt="Outstanding Thesis Award certificate" onerror="this.remove()" /></div>
-              <div class="news-card__photo"><span class="news-card__placeholder">Photo 3</span><img src="assets/img/news/thesis-award-3.jpg" alt="Outstanding Thesis Award commemorative photo" onerror="this.remove()" /></div>
+            <div class="news-card__media news-card__media--duo">
+              <div class="news-card__photo"><img src="assets/img/news/outstanding-thesis-award-certificate.webp" alt="Outstanding Thesis Award certificate from Seoul National University" loading="lazy" /></div>
+              <div class="news-card__photo"><img src="assets/img/news/outstanding-thesis-award-ceremony.webp" alt="Outstanding Thesis Award ceremony at Seoul National University" loading="lazy" /></div>
             </div>
             <div class="news-card__copy">
               <div class="news-card__meta"><time class="news-card__date">Feb 2026</time><span class="news-card__category">Award</span></div>
