@@ -581,7 +581,16 @@ html[data-theme="dark"] .tag--award { background: #3a2f14; color: #fbbf24; }
   display: block;
   width: 25px;
   height: 25px;
-  background: currentColor;
-  -webkit-mask: url("../img/snu-emblem.png") center / contain no-repeat;
-  mask: url("../img/snu-emblem.png") center / contain no-repeat;
+  object-fit: contain;
+  filter: grayscale(1) brightness(.58);
+  transition: filter .15s ease;
+}
+.social__snu:hover .social__snu-mark {
+  filter: brightness(0) invert(1);
+}
+:root[data-theme="dark"] .social__snu-mark {
+  filter: grayscale(1) brightness(1.65);
+}
+:root[data-theme="dark"] .social__snu:hover .social__snu-mark {
+  filter: brightness(0) invert(1);
 }
