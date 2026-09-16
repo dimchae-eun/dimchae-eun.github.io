@@ -574,3 +574,14 @@ html[data-theme="dark"] .tag--award { background: #3a2f14; color: #fbbf24; }
 .news-card:hover .news-card__photo img {
   transform: none;
 }
+
+
+/* SNU emblem link to AFBL Lab */
+.social__snu-mark {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: currentColor;
+  -webkit-mask: url("../img/snu-emblem.png") center / contain no-repeat;
+  mask: url("../img/snu-emblem.png") center / contain no-repeat;
+}
