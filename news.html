@@ -618,6 +618,70 @@
       }
     }
 
+    /* M.S. graduation 1+2 editorial gallery */
+    .news-card__media--graduation {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      gap: clamp(8px, 1.2vw, 14px);
+      aspect-ratio: 1.45 / 1;
+      overflow: hidden;
+    }
+
+    .news-card__media--graduation .news-card__photo {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .news-card__media--graduation .news-card__photo--graduation-portrait {
+      grid-column: 1;
+      grid-row: 1 / 3;
+    }
+
+    .news-card__media--graduation .news-card__photo--graduation-group {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    .news-card__media--graduation .news-card__photo--graduation-degree {
+      grid-column: 2;
+      grid-row: 2;
+      width: 100%;
+    }
+
+    .news-card__media--graduation .news-card__photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .news-card__media--graduation .news-card__photo--graduation-portrait img {
+      object-position: center 58%;
+    }
+
+    .news-card__media--graduation .news-card__photo--graduation-group img {
+      object-position: center 62%;
+    }
+
+    .news-card__media--graduation .news-card__photo--graduation-degree img {
+      object-position: center;
+    }
+
+    @media (max-width: 560px) {
+      .news-card__media--graduation {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        aspect-ratio: 1.35 / 1;
+      }
+
+      .news-card__media--graduation .news-card__photo--graduation-degree {
+        grid-column: 2;
+        width: 100%;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -710,7 +774,7 @@
           </article>
 
           <article class="news-card news-card--milestone">
-            <div class="news-card__media news-card__media--gallery">
+            <div class="news-card__media news-card__media--gallery news-card__media--graduation">
               <div class="news-card__photo news-card__photo--graduation-portrait"><img src="assets/img/news/snu-ms-graduation-portrait.webp" alt="Chaeeun Kim at the Seoul National University graduation ceremony" loading="lazy" /></div>
               <div class="news-card__photo news-card__photo--graduation-group"><img src="assets/img/news/snu-ms-graduation-group.webp" alt="Graduation group photo at Seoul National University" loading="lazy" /></div>
               <div class="news-card__photo news-card__photo--graduation-degree"><img src="assets/img/news/snu-ms-graduation-degree.webp" alt="Master of Science degree from Seoul National University" loading="lazy" /></div>
