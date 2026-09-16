@@ -140,6 +140,26 @@
       transform: none;
     }
 
+    /* Graduation gallery: portrait hero with group and degree details */
+    .news-card__photo--graduation-portrait img {
+      object-fit: cover;
+      object-position: center 62%;
+    }
+
+    .news-card__photo--graduation-group {
+      background: #172033;
+    }
+
+    .news-card__photo--graduation-group img {
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .news-card__photo--graduation-degree img {
+      object-fit: cover;
+      object-position: center 58%;
+    }
+
     .news-card__placeholder {
       position: relative;
       z-index: 1;
@@ -430,7 +450,11 @@
           </article>
 
           <article class="news-card news-card--milestone">
-            <div class="news-card__media news-card__media--single"><div class="news-card__photo"><span class="news-card__placeholder">Milestone</span><img src="assets/img/news/snu-ms-graduation.jpg" alt="M.S. graduation from Seoul National University" onerror="this.remove()" /></div></div>
+            <div class="news-card__media news-card__media--gallery">
+              <div class="news-card__photo news-card__photo--graduation-portrait"><img src="assets/img/news/snu-ms-graduation-portrait.webp" alt="Chaeeun Kim at the Seoul National University graduation ceremony" loading="lazy" /></div>
+              <div class="news-card__photo news-card__photo--graduation-group"><img src="assets/img/news/snu-ms-graduation-group.webp" alt="Graduation group photo at Seoul National University" loading="lazy" /></div>
+              <div class="news-card__photo news-card__photo--graduation-degree"><img src="assets/img/news/snu-ms-graduation-degree.webp" alt="Master of Science degree from Seoul National University" loading="lazy" /></div>
+            </div>
             <div class="news-card__copy">
               <div class="news-card__meta"><time class="news-card__date">Feb 2026</time><span class="news-card__category">Milestone</span></div>
               <h2 class="news-card__title">M.S. in Applied Bioengineering</h2>
