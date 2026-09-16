@@ -594,3 +594,21 @@ html[data-theme="dark"] .tag--award { background: #3a2f14; color: #fbbf24; }
 :root[data-theme="dark"] .social__snu:hover .social__snu-mark {
   filter: brightness(0) invert(1);
 }
+
+
+/* Profile CV link */
+.profile__cv {
+  margin-top: 12px;
+}
+.profile__cv-link {
+  color: var(--text-muted);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  transition: color .15s ease, border-color .15s ease;
+}
+.profile__cv-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
