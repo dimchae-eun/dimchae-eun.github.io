@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publications — Chaeeun Kim</title>
-  <meta name="description" content="Peer-reviewed publications by Chaeeun Kim on biosensors, bioelectronics, and point-of-care diagnostics." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20260809" />
+  <meta name="description" content="Peer-reviewed publications by Chaeeun Kim on biosensors, bioelectronics, and point-of-care diagnostics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260809">
+  <style>
+    .publication-page { max-width: 980px; margin: 0 auto; }
+    .publication-page .page-header { margin-bottom: 54px; }
+    .publication-page .page-header h1 { font-size: 2.15rem; letter-spacing: -.03em; }
+    .publication-page .page-header p { max-width: 720px; line-height: 1.7; }
+    .publication-counts { display: flex; gap: 10px; flex-wrap: wrap; margin: 17px 0 13px; }
+    .publication-count {
+      display: inline-flex; gap: 7px; align-items: center; padding: 5px 13px;
+      border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--border));
+      background: color-mix(in srgb, var(--accent-soft) 62%, var(--surface));
+      border-radius: 999px; color: var(--text-soft); font-size: .82rem;
+    }
+    .publication-count strong { color: var(--text); font-size: .88rem; }
+    .publication-note { margin: 0; font-size: .82rem !important; color: var(--text-muted) !important; }
+    .publication-note .me { font-weight: 800; color: var(--text); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+    .pub-section { margin-bottom: 46px; }
+    .pub-section__title {
+      display: flex; align-items: center; gap: 9px; margin: 0 0 18px;
+      font-size: 1.25rem; letter-spacing: -.02em;
+    }
+    .pub-section__title::before { content: ""; width: 4px; height: 20px; background: var(--accent); border-radius: 4px; }
+    .pub-section__title span { color: var(--text-muted); font-size: .84rem; font-weight: 500; }
+    .publication-cards { display: grid; gap: 16px; }
+    .publication-card {
+      position: relative; display: grid; grid-template-columns: 158px 1fr; gap: 18px;
+      padding: 17px; min-height: 184px; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 13px; box-shadow: var(--shadow-sm); transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+    .publication-card:hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: var(--shadow); }
+    .publication-card__image {
+      display: flex; align-items: center; justify-content: center; min-height: 118px;
+      overflow: hidden; border-radius: 8px; border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--border)); background: #f8fbff;
+    }
+    .publication-card__image img { width: 100%; height: 118px; object-fit: contain; }
+    .publication-card__content { min-width: 0; display: flex; flex-direction: column; padding-bottom: 25px; }
+    .publication-card__tags { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 7px; }
+    .pub-tag { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-strong); font-size: .7rem; line-height: 1.3; font-weight: 800; }
+    .pub-tag--journal { background: #e7f8ef; color: #187547; }
+    .pub-tag--clinical { background: #fff0e8; color: #a64c26; }
+    html[data-theme="dark"] .pub-tag--journal { background: #173a29; color: #85dbab; }
+    html[data-theme="dark"] .pub-tag--clinical { background: #48271d; color: #ffb18f; }
+    .publication-card__title { margin: 0 0 5px; font-size: .98rem; line-height: 1.37; letter-spacing: -.015em; }
+    .publication-card__title a { color: var(--text); }
+    .publication-card__title a:hover { color: var(--accent); }
+    .publication-card__authors { margin: 0 0 8px; color: var(--text-soft); font-size: .81rem; line-height: 1.55; }
+    .publication-card__authors .me { color: var(--text); font-weight: 800; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 2px; }
+    .publication-card__summary { margin: 0; color: var(--text-muted); font-size: .82rem; line-height: 1.58; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .publication-card__links { position: absolute; left: 193px; bottom: 16px; display: flex; gap: 13px; flex-wrap: wrap; }
+    .publication-card__links a, .publication-card__details { font-size: .76rem; font-weight: 700; }
+    .publication-card__links a { display: inline-flex; align-items: center; gap: 5px; color: var(--text-soft); }
+    .publication-card__links a:hover { color: var(--accent); text-decoration: none; }
+    .publication-card__details { position: absolute; right: 18px; bottom: 16px; color: var(--text-muted); }
+    .publication-card__details:hover { color: var(--accent); text-decoration: none; }
+    @media (max-width: 680px) {
+      .publication-page .page-header { margin-bottom: 36px; }
+      .publication-page .page-header h1 { font-size: 1.8rem; }
+      .publication-card { grid-template-columns: 1fr; gap: 13px; padding: 14px; padding-bottom: 47px; }
+      .publication-card__image { min-height: 150px; }
+      .publication-card__image img { height: 150px; }
+      .publication-card__content { padding-bottom: 0; }
+      .publication-card__links { left: 14px; bottom: 16px; }
+      .publication-card__details { right: 14px; bottom: 16px; }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- ============ NAVIGATION (same on every page) ============ -->
   <header class="nav">
     <div class="nav__inner">
       <a class="nav__brand" href="index.html">Chaeeun Kim</a>
       <nav class="nav__links" id="navLinks">
-
         <a href="index.html">About</a>
         <details class="nav__dropdown">
           <summary class="nav__dropdown-toggle is-active">Research <span class="nav__caret" aria-hidden="true">▾</span></summary>
@@ -30,87 +91,77 @@
         <a href="cv.html">CV</a>
       </nav>
       <div style="display:flex; gap:8px;">
-        <button class="icon-btn nav__toggle" onclick="toggleMenu()" aria-label="Menu">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </button>
-        <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle dark mode">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
+        <button class="icon-btn nav__toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
+        <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle dark mode">◐</button>
       </div>
     </div>
   </header>
 
   <main class="site-main">
     <div class="container">
-      <div class="layout layout--single">
-
-        <div class="page-header">
+      <div class="publication-page">
+        <header class="page-header">
           <h1>Publications</h1>
-          <p>Underlined name indicates my authorship. IF = Journal Impact Factor.</p>
-        </div>
+          <p>Selected peer-reviewed journal articles in electrochemical biosensing, potassium sensing, and point-of-care diagnostics.</p>
+          <div class="publication-counts" aria-label="Publication statistics">
+            <span class="publication-count"><strong>3</strong> Journal Articles</span>
+            <span class="publication-count"><strong>1</strong> First-author Article</span>
+            <span class="publication-count"><strong>1</strong> Co-first-author Article</span>
+          </div>
+          <p class="publication-note"><span class="me">Chaeeun Kim</span> is underlined · <sup>†</sup> indicates equal contribution</p>
+        </header>
 
-        <!-- ============ PUBLICATION LIST ============
-             To add a new publication, copy one <li class="pub"> ... </li> block
-             and edit the year, title, authors, journal, IF badge, and DOI link. -->
-        <ul class="pub-list">
-
-          <li class="pub">
-            <div class="pub__year">2026</div>
-            <div class="pub__body">
-              <h2 class="pub__title">Calibration-Free Potassium Quantification via a Stoichiometric Enzyme Cascade on Laser-Induced Graphene</h2>
-              <p class="pub__authors"><span class="me">Chaeeun Kim</span>, Chaehyung Kim, Yujoon Kim, Kangwon Lee</p>
-              <div class="pub__venue">
-                <span class="pub__journal">Biosensors and Bioelectronics</span>
-                <span class="badge badge--if">IF 11.8</span>
-                <a class="pub__link" href="https://doi.org/10.1016/j.bios.2026.118572" target="_blank" rel="noopener">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
-                  DOI
-                </a>
+        <section class="pub-section" aria-labelledby="journal-articles">
+          <h2 class="pub-section__title" id="journal-articles">Journal Articles <span>(3)</span></h2>
+          <div class="publication-cards">
+            <article class="publication-card">
+              <a class="publication-card__image" href="publication-calibration-free-k.html" aria-label="View details for Calibration-Free Potassium Quantification">
+                <img src="assets/img/publications/calibration-free-k.svg" alt="Schematic of calibration-free potassium sensing on a laser-induced graphene electrode">
+              </a>
+              <div class="publication-card__content">
+                <div class="publication-card__tags"><span class="pub-tag">Biosensors and Bioelectronics · 2026</span><span class="pub-tag pub-tag--journal">First author</span></div>
+                <h3 class="publication-card__title"><a href="publication-calibration-free-k.html">Calibration-Free Potassium Quantification via a Stoichiometric Enzyme Cascade on Laser-Induced Graphene</a></h3>
+                <p class="publication-card__authors"><span class="me">Chaeeun Kim</span>, Chaehyung Kim, Yujoon Kim, Kangwon Lee</p>
+                <p class="publication-card__summary">A potassium-dependent pyruvate kinase–pyruvate oxidase cascade on laser-induced graphene enables a rapid amperometric readout without conventional calibration.</p>
               </div>
-            </div>
-          </li>
+              <div class="publication-card__links"><a href="https://doi.org/10.1016/j.bios.2026.118572" target="_blank" rel="noopener">↗ View Paper</a></div>
+              <a class="publication-card__details" href="publication-calibration-free-k.html">Details →</a>
+            </article>
 
-          <li class="pub">
-            <div class="pub__year">2026</div>
-            <div class="pub__body">
-              <h2 class="pub__title">Supercapacitive Carbon-Coated δ-MnO₂ Nanosheets as a Solid-Contact Material for Self-Testing Potassium-Ion Biosensors</h2>
-              <p class="pub__authors">Jaeyeon Lee, <span class="me">Chaeeun Kim</span>, Chaehyung Kim, Yujoon Kim, Kangwon Lee, Young Kim</p>
-              <div class="pub__venue">
-                <span class="pub__journal">Small</span>
-                <span class="badge badge--if">IF 11.8</span>
-                <a class="pub__link" href="https://doi.org/10.1002/smll.202513386" target="_blank" rel="noopener">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
-                  DOI
-                </a>
+            <article class="publication-card">
+              <a class="publication-card__image" href="publication-solid-contact-k.html" aria-label="View details for Solid-Contact Potassium-Ion Biosensor">
+                <img src="assets/img/publications/solid-contact-k.svg" alt="Schematic of a solid-contact potassium ion-selective electrode">
+              </a>
+              <div class="publication-card__content">
+                <div class="publication-card__tags"><span class="pub-tag">Small · 2026</span><span class="pub-tag pub-tag--journal">Co-author</span></div>
+                <h3 class="publication-card__title"><a href="publication-solid-contact-k.html">Supercapacitive Carbon-Coated δ-MnO₂ Nanosheets as a Solid-Contact Material for Self-Testing Potassium-Ion Biosensors</a></h3>
+                <p class="publication-card__authors">Jaeyeon Lee, <span class="me">Chaeeun Kim</span>, Chaehyung Kim, Yujoon Kim, Kangwon Lee, Young Kim</p>
+                <p class="publication-card__summary">Supercapacitive carbon-coated δ-MnO₂ nanosheets improve interfacial stability for reliable, self-testing potassium ion-selective biosensors.</p>
               </div>
-            </div>
-          </li>
+              <div class="publication-card__links"><a href="https://doi.org/10.1002/smll.202513386" target="_blank" rel="noopener">↗ View Paper</a></div>
+              <a class="publication-card__details" href="publication-solid-contact-k.html">Details →</a>
+            </article>
 
-          <li class="pub">
-            <div class="pub__year">2025</div>
-            <div class="pub__body">
-              <h2 class="pub__title">Clinical Evaluation of a Disposable Test Strip for Potassium Level Measurement in Patients Treated with Maintenance Hemodialysis</h2>
-              <p class="pub__authors">Cheol Ho Park<sup>†</sup>, Yujoon Kim<sup>†</sup>, <span class="me">Chaeeun Kim<sup>†</sup></span>, Chaehyung Kim<sup>†</sup>, Sowon Kim, Kangwon Lee, Tae-Hyun Yoo<span class="author-note"><sup>†</sup> These authors contributed equally.</span></p>
-              <div class="pub__venue">
-                <span class="pub__journal">Clinical Journal of the American Society of Nephrology (CJASN)</span>
-                <span class="badge badge--if">IF 7.1</span>
-                <a class="pub__link" href="https://doi.org/10.2215/CJN.0000000934" target="_blank" rel="noopener">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
-                  DOI
-                </a>
+            <article class="publication-card">
+              <a class="publication-card__image" href="publication-clinical-k-strip.html" aria-label="View details for clinical evaluation of disposable potassium test strip">
+                <img src="assets/img/publications/clinical-potassium-strip.svg" alt="Schematic of disposable potassium strip clinical evaluation">
+              </a>
+              <div class="publication-card__content">
+                <div class="publication-card__tags"><span class="pub-tag">CJASN · 2025</span><span class="pub-tag pub-tag--clinical">Co-first author</span></div>
+                <h3 class="publication-card__title"><a href="publication-clinical-k-strip.html">Clinical Evaluation of a Disposable Test Strip for Potassium Level Measurement in Patients Treated with Maintenance Hemodialysis</a></h3>
+                <p class="publication-card__authors">Cheol Ho Park<sup>†</sup>, Yujoon Kim<sup>†</sup>, <span class="me">Chaeeun Kim<sup>†</sup></span>, Chaehyung Kim<sup>†</sup>, Sowon Kim, Kangwon Lee, Tae-Hyun Yoo</p>
+                <p class="publication-card__summary">Clinical evaluation of a disposable potentiometric strip and handheld reader for rapid potassium measurement in patients undergoing maintenance hemodialysis.</p>
               </div>
-            </div>
-          </li>
-
-        </ul>
+              <div class="publication-card__links"><a href="https://doi.org/10.2215/CJN.0000000934" target="_blank" rel="noopener">↗ View Paper</a></div>
+              <a class="publication-card__details" href="publication-clinical-k-strip.html">Details →</a>
+            </article>
+          </div>
+        </section>
       </div>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">© 2026 Chaeeun Kim · Seoul National University, Seoul, Korea</div>
-  </footer>
-
+  <footer class="footer"><div class="container">© 2026 Chaeeun Kim · Seoul National University, Seoul, Korea</div></footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
