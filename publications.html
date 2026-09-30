@@ -39,7 +39,7 @@
     }
     .publication-card:hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: var(--shadow); }
     .publication-card__image {
-      display: block; align-self: start; overflow: hidden; border-radius: 8px;
+      display: block; align-self: center; overflow: hidden; border-radius: 8px;
       border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--border));
     }
     .publication-card__image img { display: block; width: 100%; height: auto; }
@@ -48,8 +48,10 @@
     .pub-tag { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-strong); font-size: .7rem; line-height: 1.3; font-weight: 800; }
     .pub-tag--journal { background: #e7f8ef; color: #187547; }
     .pub-tag--clinical { background: #fff0e8; color: #a64c26; }
+    .pub-tag--if { background: #f1f3ff; color: #485cb7; }
     html[data-theme="dark"] .pub-tag--journal { background: #173a29; color: #85dbab; }
     html[data-theme="dark"] .pub-tag--clinical { background: #48271d; color: #ffb18f; }
+    html[data-theme="dark"] .pub-tag--if { background: #20264b; color: #b6c2ff; }
     .publication-card__title { margin: 0 0 5px; font-size: .98rem; line-height: 1.37; letter-spacing: -.015em; }
     .publication-card__title a { color: var(--text); }
     .publication-card__title a:hover { color: var(--accent); }
@@ -112,7 +114,7 @@
                 <img src="assets/img/publications/bnb-scheme.webp" alt="Schematic of calibration-free potassium sensing on a laser-induced graphene electrode">
               </a>
               <div class="publication-card__content">
-                <div class="publication-card__tags"><span class="pub-tag">Biosensors and Bioelectronics · 2026</span><span class="pub-tag pub-tag--journal">First author</span></div>
+                <div class="publication-card__tags"><span class="pub-tag">Biosensors and Bioelectronics · 2026</span><span class="pub-tag pub-tag--journal">First author</span><span class="pub-tag pub-tag--if">IF 11.8</span></div>
                 <h3 class="publication-card__title"><a href="publication-calibration-free-k.html">Calibration-Free Potassium Quantification via a Stoichiometric Enzyme Cascade on Laser-Induced Graphene</a></h3>
                 <p class="publication-card__authors"><span class="me">Chaeeun Kim</span>, Chaehyung Kim, Yujoon Kim, Kangwon Lee</p>
                 <p class="publication-card__summary">A potassium-dependent pyruvate kinase–pyruvate oxidase cascade on laser-induced graphene enables a rapid amperometric readout without conventional calibration.</p>
@@ -126,7 +128,7 @@
                 <img src="assets/img/publications/small-scheme.webp" alt="Schematic of a solid-contact potassium ion-selective electrode">
               </a>
               <div class="publication-card__content">
-                <div class="publication-card__tags"><span class="pub-tag">Small · 2026</span><span class="pub-tag pub-tag--journal">Co-author</span></div>
+                <div class="publication-card__tags"><span class="pub-tag">Small · 2026</span><span class="pub-tag pub-tag--journal">Co-author</span><span class="pub-tag pub-tag--if">IF 11.8</span></div>
                 <h3 class="publication-card__title"><a href="publication-solid-contact-k.html">Supercapacitive Carbon-Coated δ-MnO₂ Nanosheets as a Solid-Contact Material for Self-Testing Potassium-Ion Biosensors</a></h3>
                 <p class="publication-card__authors">Jaeyeon Lee, <span class="me">Chaeeun Kim</span>, Chaehyung Kim, Yujoon Kim, Kangwon Lee, Young Kim</p>
                 <p class="publication-card__summary">Supercapacitive carbon-coated δ-MnO₂ nanosheets improve interfacial stability for reliable, self-testing potassium ion-selective biosensors.</p>
@@ -140,7 +142,7 @@
                 <img src="assets/img/publications/cjasn-scheme.webp?v=64d18b4d" alt="Schematic of disposable potassium strip clinical evaluation">
               </a>
               <div class="publication-card__content">
-                <div class="publication-card__tags"><span class="pub-tag">CJASN · 2025</span><span class="pub-tag pub-tag--clinical">Co-first author</span></div>
+                <div class="publication-card__tags"><span class="pub-tag">CJASN · 2025</span><span class="pub-tag pub-tag--clinical">Co-first author</span><span class="pub-tag pub-tag--if">IF 7.0</span></div>
                 <h3 class="publication-card__title"><a href="publication-clinical-k-strip.html">Clinical Evaluation of a Disposable Test Strip for Potassium Level Measurement in Patients Treated with Maintenance Hemodialysis</a></h3>
                 <p class="publication-card__authors">Cheol Ho Park<sup>†</sup>, Yujoon Kim<sup>†</sup>, <span class="me">Chaeeun Kim<sup>†</sup></span>, Chaehyung Kim<sup>†</sup>, Sowon Kim, Kangwon Lee, Tae-Hyun Yoo</p>
                 <p class="publication-card__summary">Clinical evaluation of a disposable potentiometric strip and handheld reader for rapid potassium measurement in patients undergoing maintenance hemodialysis.</p>
