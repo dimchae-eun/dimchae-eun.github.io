@@ -39,10 +39,10 @@
     }
     .publication-card:hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: var(--shadow); }
     .publication-card__image {
-      display: flex; align-items: center; justify-content: center; min-height: 118px;
-      overflow: hidden; border-radius: 8px; border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--border)); background: #f8fbff;
+      display: block; overflow: hidden; border-radius: 8px;
+      border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--border));
     }
-    .publication-card__image img { width: 100%; height: 118px; object-fit: contain; }
+    .publication-card__image img { display: block; width: 100%; height: auto; }
     .publication-card__content { min-width: 0; display: flex; flex-direction: column; padding-bottom: 25px; }
     .publication-card__tags { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 7px; }
     .pub-tag { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-strong); font-size: .7rem; line-height: 1.3; font-weight: 800; }
@@ -66,8 +66,6 @@
       .publication-page .page-header { margin-bottom: 36px; }
       .publication-page .page-header h1 { font-size: 1.8rem; }
       .publication-card { grid-template-columns: 1fr; gap: 13px; padding: 14px; padding-bottom: 47px; }
-      .publication-card__image { min-height: 150px; }
-      .publication-card__image img { height: 150px; }
       .publication-card__content { padding-bottom: 0; }
       .publication-card__links { left: 14px; bottom: 16px; }
       .publication-card__details { right: 14px; bottom: 16px; }
@@ -144,7 +142,7 @@
 
             <article class="publication-card">
               <a class="publication-card__image" href="publication-clinical-k-strip.html" aria-label="View details for clinical evaluation of disposable potassium test strip">
-                <img src="assets/img/publications/cjasn-scheme.webp" alt="Schematic of disposable potassium strip clinical evaluation">
+                <img src="assets/img/publications/cjasn-scheme.jpeg" alt="Schematic of disposable potassium strip clinical evaluation">
               </a>
               <div class="publication-card__content">
                 <div class="publication-card__tags"><span class="pub-tag">CJASN · 2025</span><span class="pub-tag pub-tag--clinical">Co-first author</span></div>
