@@ -167,35 +167,27 @@ img { max-width: 100%; display: block; }
 /* Hero (About intro) */
 .hero-panel {
   position: relative;
-  overflow: hidden;
-  padding: 34px 36px;
-  border: 1px solid color-mix(in srgb, var(--accent) 12%, var(--border));
-  border-radius: var(--radius);
-  background-color: var(--surface);
-  background-image:
-    linear-gradient(90deg, var(--surface) 0%, color-mix(in srgb, var(--surface) 96%, transparent) 48%, color-mix(in srgb, var(--surface) 50%, transparent) 100%),
-    url("../img/hero-molecular-bg.svg");
-  background-position: center, right center;
-  background-repeat: no-repeat;
-  background-size: cover, auto 100%;
-  box-shadow: var(--shadow-sm);
+  padding: 36px 40px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
 }
-.hero-panel > * { position: relative; z-index: 1; }
-.hero-panel .prose { max-width: 88%; }
 .hero__eyebrow {
-  margin: 0 0 10px;
-  color: var(--accent);
-  font-size: .82rem;
-  font-weight: 700;
-  letter-spacing: .06em;
+  display: inline-flex; align-items: center; gap: 8px;
+  margin: 0 0 16px;
+  color: var(--text-muted);
+  font-size: .74rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
 }
-.hero__name { font-size: 2.4rem; margin: 0 0 6px; letter-spacing: -.03em; }
-.hero__tagline { font-size: 1.15rem; color: var(--accent); font-weight: 600; margin: 0 0 20px; }
+.hero__eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+.hero__name { font-size: 2.5rem; font-weight: 800; margin: 0 0 10px; letter-spacing: -.04em; }
+.hero__tagline { font-size: 1.08rem; color: var(--text-soft); font-weight: 500; margin: 0 0 24px; padding-bottom: 22px; border-bottom: 1px solid var(--border); }
 .prose p { color: var(--text-soft); margin: 0 0 16px; }
-.hero-panel .prose strong {
-  color: var(--text);
-  font-weight: 700;
-}
+.hero-panel .prose p { line-height: 1.85; }
+.hero-panel .prose p:last-child { margin-bottom: 0; }
+.hero-panel .prose strong { color: var(--text); font-weight: 600; }
 
 /* ---------- Cards / research focus ---------- */
 .section__heading-row {
@@ -440,8 +432,7 @@ html[data-theme="dark"] .tag--award { background: #3a2f14; color: #fbbf24; }
   .pub { flex-direction: column; gap: 8px; }
   .pub__year { width: auto; }
   .hero__name { font-size: 2rem; }
-  .hero-panel { padding: 28px 24px; background-size: cover, auto 85%; }
-  .hero-panel .prose { max-width: 100%; }
+  .hero-panel { padding: 28px 24px; }
 }
 
 @media (max-width: 560px) {
