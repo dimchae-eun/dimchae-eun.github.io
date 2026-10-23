@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chaeeun Kim — Biosensors & Bioelectronics Researcher</title>
-  <meta name="description" content="Chaeeun Kim — M.S. in Applied Bioengineering, Seoul National University. Research on electrochemical biosensors, laser-induced graphene electrodes, and point-of-care diagnostics." />
+  <meta name="description" content="Chaeeun Kim — M.S. in Applied Bioengineering, Seoul National University. Research on electrochemical biosensors, sensing materials and interfaces, and point-of-care diagnostics." />
 
 
   <!-- Font: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20260916-3" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261023-research" />
 </head>
 <body>
 
@@ -22,11 +22,12 @@
       <a class="nav__brand" href="index.html">Chaeeun Kim</a>
       <nav class="nav__links" id="navLinks">
         <a href="index.html" class="is-active">About</a>
+        <details class="nav__dropdown"><summary class="nav__dropdown-toggle">Research <span class="nav__caret" aria-hidden="true">▾</span></summary><div class="nav__dropdown-menu"><a href="research-experiences.html">Research Experiences</a><a href="research-interests.html">Research Interests</a></div></details>
         <details class="nav__dropdown">
           <summary class="nav__dropdown-toggle">Publications <span class="nav__caret" aria-hidden="true">▾</span></summary>
           <div class="nav__dropdown-menu">
             <a href="publications.html">Journal Articles</a>
-            <a href="patents.html">Patent</a>
+            <a href="patents.html">Patent</a><a href="publications.html#theses">Theses</a>
           </div>
         </details>
         <a href="news.html">News</a>
@@ -144,42 +145,42 @@
           <section class="section section--research">
             <div class="section__heading-row">
               <h2 class="section__title">Research Focus</h2>
-              <a class="section__more" href="publications.html" aria-label="View all research publications">
-                View All Research
+              <a class="section__more" href="research-experiences.html" aria-label="More about research experiences">
+                More
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
             </div>
             <div class="cards">
-              <article class="card research-card">
+              <a class="card research-card research-card--link" href="research-experiences.html#electrochemical-biosensors">
                 <div class="research-card__media">
                   <span class="research-card__index">01</span>
                   <img src="assets/img/research-biosensor-hd.webp" alt="Electrochemical potassium biosensor and enzyme cascade" />
                 </div>
                 <div class="research-card__body">
                   <h3>Electrochemical Biosensors</h3>
-                  <p>Enzyme-based and ion-selective sensing for accurate, calibration-free quantification.</p>
+                  <p>Biochemical signal transduction through enzyme cascades and ion-selective sensing.</p>
                 </div>
-              </article>
-              <article class="card research-card">
+              </a>
+              <a class="card research-card research-card--link" href="research-experiences.html#sensing-materials-interfaces">
                 <div class="research-card__media">
                   <span class="research-card__index">02</span>
                   <img src="assets/img/research-lig-hd.webp" alt="Laser-induced graphene patterned on a polyimide substrate" />
                 </div>
                 <div class="research-card__body">
-                  <h3>Laser-Induced Graphene (LIG) Electrodes</h3>
-                  <p>Scalable, low-cost graphene electrodes patterned by laser for wearable and disposable devices.</p>
+                  <h3>Sensing Materials &amp; Interfaces</h3>
+                  <p>Graphene electrodes and solid-contact materials for reliable electrochemical sensing.</p>
                 </div>
-              </article>
-              <article class="card research-card">
+              </a>
+              <a class="card research-card research-card--link" href="research-experiences.html#point-of-care-diagnostics">
                 <div class="research-card__media">
                   <span class="research-card__index">03</span>
                   <img src="assets/img/research-poct-hd.webp" alt="Portable point-of-care analyzer and disposable test strip" />
                 </div>
                 <div class="research-card__body">
                   <h3>Point-of-Care Diagnostics</h3>
-                  <p>Disposable test strips clinically validated for rapid, on-site health monitoring.</p>
+                  <p>Disposable sensing strips and portable systems evaluated for clinical use.</p>
                 </div>
-              </article>
+              </a>
             </div>
           </section>
 
@@ -247,6 +248,6 @@
   </footer>
 
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=20261023"></script>
 </body>
 </html>

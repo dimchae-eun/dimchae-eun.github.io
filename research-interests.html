@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Interests — Chaeeun Kim</title>
+  <meta name="description" content="Future research directions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261023-research">
+  <link rel="stylesheet" href="assets/css/research.css?v=20261023-1">
+</head>
+<body>
+<header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">Chaeeun Kim</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html">About</a>
+        <details class="nav__dropdown"><summary class="nav__dropdown-toggle is-active">Research <span class="nav__caret" aria-hidden="true">▾</span></summary><div class="nav__dropdown-menu"><a href="research-experiences.html">Research Experiences</a><a href="research-interests.html" class="is-active" aria-current="page">Research Interests</a></div></details>
+        <details class="nav__dropdown">
+          <summary class="nav__dropdown-toggle">Publications <span class="nav__caret" aria-hidden="true">▾</span></summary>
+          <div class="nav__dropdown-menu">
+            <a href="publications.html">Journal Articles</a>
+            <a href="patents.html">Patent</a><a href="publications.html#theses">Theses</a>
+          </div>
+        </details>
+        <a href="news.html">News</a>
+        <a href="cv.html">CV</a>
+      </nav>
+      <div style="display:flex; gap:8px;">
+        <button class="icon-btn nav__toggle" onclick="toggleMenu()" aria-label="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle dark mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="site-main" id="main-content">
+    <div class="container">
+      <div class="research-page">
+        <header class="research-header">
+          <p class="research-eyebrow">Research</p>
+          <h1>Research Interests</h1>
+          <p class="research-header__intro">Future research directions.</p>
+        </header>
+        <nav class="research-tabs" aria-label="Research pages"><a href="research-experiences.html">Research Experiences</a><a href="research-interests.html" aria-current="page">Research Interests</a></nav>
+        <section class="research-pending" aria-labelledby="pending-heading">
+          <h2 id="pending-heading">Coming soon</h2>
+          <p>This page will be updated with future research interests.</p>
+          <a href="research-experiences.html">Explore Research Experiences →</a>
+        </section>
+      </div>
+    </div>
+  </main>
+<footer class="footer">
+    <div class="container">© 2026 Chaeeun Kim · Seoul National University, Seoul, Korea</div>
+  </footer>
+  <script src="assets/js/main.js?v=20261023"></script>
+</body>
+</html>
