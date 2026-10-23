@@ -66,3 +66,13 @@
 .research-video-pending p { color: var(--text); font-size: 1.1rem; font-weight: 600; margin: 0; }
 .research-video-pending > span:last-child { color: var(--text-muted); font-size: .82rem; }
 .research-video { width: 100%; height: auto; display: block; border-radius: 12px; background: #111; margin: 28px 0; }
+.research-media-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin: 28px 0 32px; }
+.research-media { margin: 0; }
+.research-media__frame { position: relative; aspect-ratio: 1 / 1; overflow: hidden; border: 1px solid var(--border); border-radius: 12px; background: #111; }
+.research-media__frame video { width: 100%; height: 100%; display: block; object-fit: cover; }
+.research-media__frame--image { display: flex; align-items: center; justify-content: center; padding: 18px; background: #fff; }
+.research-media__frame--image img { width: 100%; height: 100%; object-fit: contain; }
+.research-media figcaption { margin-top: 10px; color: var(--text-muted); font-size: .78rem; line-height: 1.65; }
+.research-media figcaption strong { color: var(--text-soft); font-weight: 600; }
+.research-figure--poct img { max-width: 640px; }
+@media (max-width: 860px) { .research-media-grid { grid-template-columns: 1fr; gap: 24px; } .research-media__frame { aspect-ratio: 4 / 3; } }

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=20261023-research">
-  <link rel="stylesheet" href="assets/css/research.css?v=20261023-1">
+  <link rel="stylesheet" href="assets/css/research.css?v=20261023-2">
 </head>
 <body>
 <header class="nav">
@@ -22,7 +22,7 @@
           <summary class="nav__dropdown-toggle">Publications <span class="nav__caret" aria-hidden="true">▾</span></summary>
           <div class="nav__dropdown-menu">
             <a href="publications.html">Journal Articles</a>
-            <a href="patents.html">Patent</a><a href="publications.html#theses">Theses</a>
+            <a href="patents.html">Patents/Projects</a><a href="publications.html#theses">Theses</a>
           </div>
         </details>
         <a href="news.html">News</a>
@@ -98,15 +98,20 @@
             <span class="research-keyword">Nanostructured electrodes</span>
             <span class="research-keyword">Interfacial capacitance</span>
           </div>
-          <div class="research-video-pending" role="note" aria-label="LIG electrode fabrication video coming soon">
-            <span class="research-video-pending__type">Fabrication video</span>
-            <p>LIG electrode fabrication</p>
-            <span>Video coming soon</span>
+          <div class="research-media-grid" aria-label="Materials and interfaces media">
+            <figure class="research-media">
+              <div class="research-media__frame"><video controls muted playsinline preload="metadata" poster="assets/img/research/lig-fabrication-poster.jpg" aria-label="Laser writing of LIG electrode patterns on polyimide film"><source src="assets/video/lig-fabrication.mp4" type="video/mp4"></video></div>
+              <figcaption><strong>LIG electrode fabrication.</strong> Laser direct writing of LIG electrode patterns on polyimide film.</figcaption>
+            </figure>
+            <figure class="research-media">
+              <div class="research-media__frame"><video controls muted playsinline preload="metadata" poster="assets/img/research/mno2-response-poster.jpg" aria-label="Side-by-side potassium measurement with activated-carbon and δ-MnO₂@C solid-contact strips"><source src="assets/video/mno2-response-comparison.mp4" type="video/mp4"></video></div>
+              <figcaption><strong>Response-time comparison.</strong> Activated-carbon vs. δ-MnO₂@C solid-contact strips at 4 mM K⁺. Supporting video from the related <em>Small</em> publication.</figcaption>
+            </figure>
+            <figure class="research-media">
+              <div class="research-media__frame research-media__frame--image"><img src="assets/img/publications/small-scheme.webp" width="394" height="366" loading="lazy" alt="Carbon-coated manganese dioxide nanosheets used as the solid-contact layer between a current collector and a potassium ion-selective membrane"></div>
+              <figcaption><strong>Solid-contact materials.</strong> Carbon-coated δ-MnO₂ nanosheets as the transducing layer of a potentiometric strip. Graphical abstract from the <em>Small</em> publication.</figcaption>
+            </figure>
           </div>
-          <figure class="research-figure research-figure--compact">
-            <div class="research-figure__canvas"><img src="assets/img/publications/small-scheme.webp" width="394" height="366" loading="lazy" alt="Carbon-coated manganese dioxide nanosheets used as the solid-contact layer between a current collector and a potassium ion-selective membrane"></div>
-            <figcaption><strong>Solid-contact materials for potassium sensing.</strong> Carbon-coated δ-MnO₂ nanosheets provide the transducing interface in a potentiometric sensing strip. Graphical abstract from the related <em>Small</em> publication.</figcaption>
-          </figure>
           <div class="research-related">
             <p class="research-related__label">Related publications</p>
             <div class="research-related__item">
@@ -141,9 +146,9 @@
             <p>Point-of-care measurement</p>
             <span>Video coming soon</span>
           </div>
-          <figure class="research-figure">
-            <div class="research-figure__canvas"><img src="assets/img/publications/cjasn-scheme.webp" width="1295" height="729" loading="lazy" alt="Clinical study visual abstract showing potassium test-strip evaluation in 40 hemodialysis patients and comparison of capillary-blood results with central laboratory serum measurements"></div>
-            <figcaption><strong>Clinical evaluation of a disposable potassium test strip.</strong> Analytical testing and comparison with central laboratory measurements in patients receiving maintenance hemodialysis. Visual abstract from the related <em>CJASN</em> publication.</figcaption>
+          <figure class="research-figure research-figure--compact research-figure--poct">
+            <div class="research-figure__canvas"><img src="assets/img/research/poct-sample-workflow.webp" width="574" height="314" loading="lazy" alt="Blood sample pathways from a hemodialysis patient: capillary and venous blood measured by point-of-care testing, and serum and lithium-heparin plasma measured at the central laboratory"></div>
+            <figcaption><strong>Sample pathways in the clinical evaluation.</strong> Capillary and venous blood measured with the disposable strip at the point of care, compared with serum and lithium-heparin plasma measured at the central laboratory in patients receiving maintenance hemodialysis.</figcaption>
           </figure>
           <div class="research-related">
             <p class="research-related__label">Related publication</p>

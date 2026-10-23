@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Patent — Chaeeun Kim</title>
-  <meta name="description" content="Patent by Chaeeun Kim in biosensing and point-of-care diagnostics." />
+  <title>Patents/Projects — Chaeeun Kim</title>
+  <meta name="description" content="Patents and research projects by Chaeeun Kim in biosensing and point-of-care diagnostics." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css?v=20261023-research" />
+  <style>
+    .patent-section__title { font-size: 1.15rem; font-weight: 700; margin: 0 0 14px; }
+    .patent__desc { font-size: .9rem; color: var(--text-soft); line-height: 1.7; margin: 8px 0 0; }
+  </style>
 </head>
 <body>
 
@@ -23,7 +27,7 @@
           <summary class="nav__dropdown-toggle is-active">Publications <span class="nav__caret" aria-hidden="true">▾</span></summary>
           <div class="nav__dropdown-menu">
             <a href="publications.html">Journal Articles</a>
-            <a href="patents.html" class="is-active">Patent</a><a href="publications.html#theses">Theses</a>
+            <a href="patents.html" class="is-active">Patents/Projects</a><a href="publications.html#theses">Theses</a>
           </div>
         </details>
         <a href="news.html">News</a>
@@ -45,9 +49,12 @@
       <div class="layout layout--single">
 
         <div class="page-header">
-          <h1>Patent</h1>
-          <p>Registered intellectual property.</p>
+          <h1>Patents/Projects</h1>
+          <p>Registered intellectual property and funded research projects.</p>
         </div>
+
+        <section class="patent-section">
+        <h2 class="patent-section__title">Patents</h2>
 
         <!-- ============ PATENT LIST ============
              To add a patent, copy one <div class="patent"> ... </div> block and edit. -->
@@ -69,6 +76,46 @@
             </a>
           </div>
         </div>
+
+        </section>
+
+        <section class="patent-section">
+        <h2 class="patent-section__title">Projects</h2>
+
+        <!-- ============ PROJECT LIST ============
+             To add a project, copy one <div class="patent"> ... </div> block and edit. -->
+        <div class="patent">
+          <div class="patent__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6"/><path d="M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/><path d="M7.5 15h9"/></svg>
+          </div>
+          <div>
+            <h2 class="patent__title">Simultaneous Glucose and Potassium Test Strip</h2>
+            <p class="patent__meta">
+              <span>Program:</span> Seoul R&amp;D Program, Seoul Business Agency (BT230224) &nbsp;·&nbsp;
+              <span>Role:</span> Project Manager &nbsp;·&nbsp;
+              <span>Status:</span> Completed &nbsp;·&nbsp;
+              <span>Period:</span> Sep 2023 – Aug 2025
+            </p>
+            <p class="patent__desc">Led potassium-sensor experimental design, data analysis, and system integration; coordinated material–device research with Ewha Womans University.</p>
+          </div>
+        </div>
+
+        <div class="patent">
+          <div class="patent__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><rect x="9" y="5" width="6" height="5" rx="1"/><path d="M10 22v-3h4v3"/></svg>
+          </div>
+          <div>
+            <h2 class="patent__title">Portable Potassium-Ion Measurement Device Development</h2>
+            <p class="patent__meta">
+              <span>Partner:</span> THEDONEE Inc. &nbsp;·&nbsp;
+              <span>Role:</span> Translational R&amp;D Lead &nbsp;·&nbsp;
+              <span>Status:</span> Ongoing &nbsp;·&nbsp;
+              <span>Period:</span> Jul 2023 – Present
+            </p>
+            <p class="patent__desc">Translational R&amp;D for a portable potassium-ion reader and disposable test-strip platform, covering sensor validation, measurement-circuit and firmware development, device housing design, and external testing.</p>
+          </div>
+        </div>
+        </section>
 
       </div>
     </div>
