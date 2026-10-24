@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="A sensor patch on the forearm sending a continuous biomarker trace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eaf0ff"/><stop offset="1" stop-color="#c9d8ff"/></linearGradient>
+    <linearGradient id="arm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6d3bf"/><stop offset="1" stop-color="#e3b49b"/></linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)"/>
+  <circle cx="540" cy="90" r="120" fill="#ffffff" opacity=".35"/>
+  <!-- forearm -->
+  <path d="M-20,330 C120,300 330,292 660,250 L660,400 C330,430 120,440 -20,450 Z" fill="url(#arm)"/>
+  <!-- patch -->
+  <g transform="rotate(-6 300 330)">
+    <rect x="215" y="292" width="170" height="78" rx="26" fill="#ffffff" stroke="#9db5f5" stroke-width="3"/>
+    <rect x="240" y="312" width="120" height="38" rx="12" fill="#eaf0ff"/>
+    <circle cx="262" cy="331" r="7" fill="#2f5fe0"/><circle cx="288" cy="331" r="7" fill="#2f5fe0" opacity=".7"/><circle cx="314" cy="331" r="7" fill="#2f5fe0" opacity=".45"/>
+    <rect x="330" y="322" width="18" height="18" rx="4" fill="#1e40af"/>
+  </g>
+  <!-- wireless -->
+  <g fill="none" stroke="#2f5fe0" stroke-width="5" stroke-linecap="round" opacity=".8">
+    <path d="M286,250 a26,26 0 0 1 36,0"/><path d="M272,232 a46,46 0 0 1 64,0"/>
+  </g>
+  <!-- trace card -->
+  <rect x="120" y="60" width="380" height="140" rx="20" fill="#ffffff" opacity=".95"/>
+  <line x1="150" y1="170" x2="470" y2="170" stroke="#e5e7eb" stroke-width="3"/>
+  <path d="M150,140 C185,120 205,150 240,138 S300,90 335,108 S395,160 430,118 S455,96 470,104" fill="none" stroke="#2f5fe0" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="470" cy="104" r="9" fill="#2f5fe0"/>
+</svg>

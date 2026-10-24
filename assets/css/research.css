@@ -91,11 +91,17 @@
 .research-figure--poct img { max-width: 640px; }
 @media (max-width: 860px) { .research-media-grid { grid-template-columns: 1fr; gap: 24px; } .research-media__frame { aspect-ratio: 4 / 3; } }
 
-/* Research Interests: open question callout, illustrations, external reading */
-.research-question { max-width: 900px; margin: 22px 0 0; padding: 16px 20px; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; background: var(--surface); }
-.research-question__label { margin: 0 0 6px; color: var(--accent); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-.research-question p:last-child { margin: 0; color: var(--text); font-size: 1rem; font-weight: 600; line-height: 1.6; }
-.research-figure--illustration img { max-width: 720px; }
-.research-related--external { margin-top: 22px; border-left-color: var(--border); }
-.research-related--external .research-related__item a { font-weight: 500; }
-@media (max-width: 680px) { .research-question { padding: 14px 16px; } .research-question p:last-child { font-size: .94rem; } }
+/* Research Interests: three-card layout and reference list */
+.interest-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin: 8px 0 72px; }
+.interest-card { display: flex; flex-direction: column; align-items: center; text-align: center; scroll-margin-top: 92px; }
+.interest-card__media { width: 100%; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 12px; border: 1px solid var(--border); background: var(--accent-soft); }
+.interest-card__media img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.interest-card__title { display: flex; align-items: center; justify-content: center; min-height: 2.7em; margin: 22px 0 12px; font-size: 1.18rem; font-weight: 700; line-height: 1.35; letter-spacing: -.01em; }
+.interest-card__text { margin: 0; max-width: 34ch; color: var(--text-soft); font-size: .93rem; line-height: 1.8; }
+.interest-refs { padding-top: 36px; border-top: 1px solid var(--border); }
+.interest-refs h2 { margin: 0 0 16px; font-size: .95rem; font-weight: 700; }
+.interest-refs ol { margin: 0; padding-left: 20px; color: var(--text-soft); font-size: .8rem; line-height: 1.7; }
+.interest-refs li + li { margin-top: 8px; }
+.interest-refs__tag { display: inline-block; margin-right: 6px; padding: 1px 7px; border-radius: 4px; background: var(--accent-soft); color: var(--accent-strong); font-size: .7rem; font-weight: 600; }
+.interest-refs a { white-space: nowrap; font-weight: 600; }
+@media (max-width: 900px) { .interest-grid { grid-template-columns: 1fr; gap: 44px; max-width: 520px; margin-left: auto; margin-right: auto; } .interest-card__text { max-width: 46ch; } }
