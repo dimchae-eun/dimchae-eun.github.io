@@ -90,3 +90,12 @@
 .research-media figcaption strong { color: var(--text-soft); font-weight: 600; }
 .research-figure--poct img { max-width: 640px; }
 @media (max-width: 860px) { .research-media-grid { grid-template-columns: 1fr; gap: 24px; } .research-media__frame { aspect-ratio: 4 / 3; } }
+
+/* Research Interests: open question callout, illustrations, external reading */
+.research-question { max-width: 900px; margin: 22px 0 0; padding: 16px 20px; border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; background: var(--surface); }
+.research-question__label { margin: 0 0 6px; color: var(--accent); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.research-question p:last-child { margin: 0; color: var(--text); font-size: 1rem; font-weight: 600; line-height: 1.6; }
+.research-figure--illustration img { max-width: 720px; }
+.research-related--external { margin-top: 22px; border-left-color: var(--border); }
+.research-related--external .research-related__item a { font-weight: 500; }
+@media (max-width: 680px) { .research-question { padding: 14px 16px; } .research-question p:last-child { font-size: .94rem; } }
