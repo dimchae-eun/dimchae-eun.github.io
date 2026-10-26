@@ -126,6 +126,7 @@
 .interest-card__text { margin: 0; max-width: 34ch; color: var(--text-soft); font-size: .93rem; line-height: 1.8; }
 .interest-refs { padding-top: 36px; border-top: 1px solid var(--border); }
 .interest-refs h2 { margin: 0 0 16px; font-size: .95rem; font-weight: 700; }
+.interest-refs__intro { margin: -5px 0 17px; color: var(--text-muted); font-size: .83rem; line-height: 1.6; }
 .interest-refs ol { margin: 0; padding-left: 20px; color: var(--text-soft); font-size: .8rem; line-height: 1.7; }
 .interest-refs li + li { margin-top: 8px; }
 .interest-refs__tag { display: inline-block; margin-right: 6px; padding: 1px 7px; border-radius: 4px; background: var(--accent-soft); color: var(--accent-strong); font-size: .7rem; font-weight: 600; }
