@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">BRIC Hanbitsa research feature, 2026</title>
+  <desc id="desc">Graphic celebrating Chaeeun Kim's first-author potassium biosensor paper featured in BRIC Hanbitsa.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a3169"/>
+      <stop offset="1" stop-color="#1656a1"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#73bff3" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#c7ecff" stop-opacity=".05"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <circle cx="1135" cy="30" r="335" fill="url(#glow)"/>
+  <circle cx="1090" cy="32" r="450" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+  <circle cx="1090" cy="32" r="305" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+  <path d="M-30 642 C235 525, 380 765, 654 625 S1028 620,1230 500" fill="none" stroke="#91caed" stroke-opacity=".2" stroke-width="3"/>
+  <text x="80" y="137" fill="#ffffff" font-size="72" font-weight="800" letter-spacing="-3" font-family="Arial, Helvetica, sans-serif">BRIC</text>
+  <rect x="80" y="174" width="106" height="5" rx="2.5" fill="#8de1ff"/>
+  <text x="80" y="257" fill="#bbdeff" font-size="22" font-weight="700" letter-spacing="5" font-family="Arial, Helvetica, sans-serif">RESEARCH FEATURE</text>
+  <text x="76" y="368" fill="#ffffff" font-size="82" font-weight="750" font-family="Arial, 'Noto Sans KR', sans-serif">한빛사</text>
+  <text x="80" y="420" fill="#d2e8ff" font-size="27" font-family="Arial, 'Noto Sans KR', sans-serif">한국을 빛내는 사람들</text>
+  <line x1="80" y1="483" x2="1110" y2="483" stroke="#b7d4ed" stroke-opacity=".45"/>
+  <text x="80" y="557" fill="#ffffff" font-size="34" font-weight="700" font-family="Arial, Helvetica, sans-serif">Chaeeun Kim</text>
+  <text x="80" y="608" fill="#d9ecfa" font-size="25" font-family="Arial, Helvetica, sans-serif">Biosensors and Bioelectronics  |  First Author</text>
+  <text x="80" y="689" fill="#9fcaec" font-size="21" letter-spacing="3" font-family="Arial, Helvetica, sans-serif">2026</text>
+</svg>
